@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎮 Собери монетки - Мультиплеер</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="connection-status">
+        <div id="status-dot"></div>
+        <span id="status-text">Подключение...</span>
+    </div>
+
+    <div id="ui">
+        <div id="score">💰 0</div>
+        <div id="message">Собери все монетки!</div>
+        <div id="players-list">
+            <div id="players-title">👥 Игроки онлайн</div>
+            <div id="players-container"></div>
+        </div>
+    </div>
+
+    <div id="controls-hint">
+        <span>W A S D</span> — движение &nbsp;|&nbsp; <span>🖱</span> — вращение камеры
+        <span style="margin-left:15px;color:rgba(255,255,255,0.3);">|</span>
+        <span style="margin-left:15px;">💬 <input type="text" id="chat-input" placeholder="Чат..." maxlength="200" /></span>
+    </div>
+
+    <div id="chat-container">
+        <div id="chat-messages"></div>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
