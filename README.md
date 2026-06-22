@@ -24,3 +24,4 @@ git clone https://github.com/yourusername/3d-multiplayer-game.git
 cd 3d-multiplayer-game
 npm install
 npm start
+http://localhost:3000
